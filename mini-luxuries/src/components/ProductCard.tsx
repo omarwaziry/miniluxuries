@@ -15,7 +15,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     <div className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
       <div className="relative aspect-square overflow-hidden">
         {/* Product Image */}
-        <Link href={`/products/${product.id}`}>
+        <Link href={`/products/${product.id}/`}>
           <div className="relative w-full h-full bg-gray-100">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-32 h-40 bg-gradient-to-b from-amber-100 to-amber-200 rounded-lg flex items-center justify-center shadow-md">
@@ -52,7 +52,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="p-4">
         <div className="mb-2">
           <p className="text-sm text-gray-500 mb-1">{product.brand}</p>
-          <Link href={`/products/${product.id}`}>
+          <Link href={`/products/${product.id}/`}>
             <h3 className="font-semibold text-gray-800 hover:text-gold transition-colors line-clamp-1">
               {product.name}
             </h3>

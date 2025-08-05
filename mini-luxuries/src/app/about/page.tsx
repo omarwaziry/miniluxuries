@@ -225,7 +225,7 @@ export default function AboutPage() {
               </p>
                              <div className="space-y-3">
                  <Link 
-                   href="/products" 
+                   href="/products/" 
                    className="block w-full bg-white text-gold py-3 px-6 rounded-lg font-semibold text-center hover:bg-gray-100 transition-colors"
                  >
                    Shop Online

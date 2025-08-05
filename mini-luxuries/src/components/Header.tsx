@@ -36,19 +36,19 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-gold transition-colors font-medium">
               Home
             </Link>
-            <Link href="/products" className="text-gray-700 hover:text-gold transition-colors font-medium">
+            <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium">
               All Perfumes
             </Link>
-            <Link href="/products?category=women" className="text-gray-700 hover:text-gold transition-colors font-medium">
+            <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium">
               Women
             </Link>
-            <Link href="/products?category=men" className="text-gray-700 hover:text-gold transition-colors font-medium">
+            <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium">
               Men
             </Link>
-            <Link href="/products?category=unisex" className="text-gray-700 hover:text-gold transition-colors font-medium">
+            <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium">
               Unisex
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gold transition-colors font-medium">
+            <Link href="/about/" className="text-gray-700 hover:text-gold transition-colors font-medium">
               About
             </Link>
           </nav>
@@ -71,7 +71,7 @@ export default function Header() {
             </button>
 
             {/* Cart */}
-            <Link href="/cart" className="relative p-2 hover:bg-gray-100 rounded-full transition-colors">
+            <Link href="/cart/" className="relative p-2 hover:bg-gray-100 rounded-full transition-colors">
               <ShoppingBag className="w-5 h-5 text-gray-600" />
               {cartItemsCount > 0 && (
                 <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
@@ -97,19 +97,19 @@ export default function Header() {
               <Link href="/" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
                 Home
               </Link>
-              <Link href="/products" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
+              <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
                 All Perfumes
               </Link>
-              <Link href="/products?category=women" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
+              <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
                 Women
               </Link>
-              <Link href="/products?category=men" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
+              <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
                 Men
               </Link>
-              <Link href="/products?category=unisex" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
+              <Link href="/products/" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
                 Unisex
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
+              <Link href="/about/" className="text-gray-700 hover:text-gold transition-colors font-medium py-2">
                 About
               </Link>
             </div>

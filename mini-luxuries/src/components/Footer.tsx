@@ -34,12 +34,12 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link href="/products" className="text-gray-400 hover:text-white transition-colors">All Perfumes</Link></li>
-              <li><Link href="/products?category=women" className="text-gray-400 hover:text-white transition-colors">Women&apos;s Fragrances</Link></li>
-              <li><Link href="/products?category=men" className="text-gray-400 hover:text-white transition-colors">Men&apos;s Fragrances</Link></li>
-              <li><Link href="/products?category=unisex" className="text-gray-400 hover:text-white transition-colors">Unisex Fragrances</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/products/" className="text-gray-400 hover:text-white transition-colors">All Perfumes</Link></li>
+              <li><Link href="/products/" className="text-gray-400 hover:text-white transition-colors">Women&apos;s Fragrances</Link></li>
+              <li><Link href="/products/" className="text-gray-400 hover:text-white transition-colors">Men&apos;s Fragrances</Link></li>
+              <li><Link href="/products/" className="text-gray-400 hover:text-white transition-colors">Unisex Fragrances</Link></li>
+              <li><Link href="/about/" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/contact/" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 

@@ -1,20 +1,16 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
-import { products, getProductsByCategory } from '@/data/products';
+import { products } from '@/data/products';
 import { Product } from '@/types';
 import { Search, SlidersHorizontal } from 'lucide-react';
 
-function ProductsContent() {
-  const searchParams = useSearchParams();
-  const categoryParam = searchParams.get('category');
-  
+export default function ProductsPage() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(products);
-  const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam || 'all');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 5000]);
   const [sortBy, setSortBy] = useState<string>('name');
   const [searchTerm, setSearchTerm] = useState<string>('');
@@ -25,7 +21,7 @@ function ProductsContent() {
 
     // Filter by category
     if (selectedCategory !== 'all') {
-      filtered = getProductsByCategory(selectedCategory as 'men' | 'women' | 'unisex');
+      filtered = filtered.filter(product => product.category === selectedCategory);
     }
 
     // Filter by price range
@@ -59,12 +55,6 @@ function ProductsContent() {
 
     setFilteredProducts(filtered);
   }, [selectedCategory, priceRange, sortBy, searchTerm]);
-
-  useEffect(() => {
-    if (categoryParam) {
-      setSelectedCategory(categoryParam);
-    }
-  }, [categoryParam]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -234,21 +224,5 @@ function ProductsContent() {
 
       <Footer />
     </div>
-  );
-}
-
-export default function ProductsPage() {
-  return (
-    <Suspense fallback={
-      <div className="min-h-screen bg-gray-50">
-        <Header />
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center">Loading products...</div>
-        </div>
-        <Footer />
-      </div>
-    }>
-      <ProductsContent />
-    </Suspense>
   );
 }

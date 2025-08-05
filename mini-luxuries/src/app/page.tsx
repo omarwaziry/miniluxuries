@@ -36,7 +36,7 @@ export default function Home() {
 
           <div className="text-center">
             <Link 
-              href="/products"
+              href="/products/"
               className="inline-flex items-center px-8 py-3 gradient-gold text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
             >
               View All Products
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/products?category=women" className="group">
+            <Link href="/products/" className="group">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="aspect-[4/3] bg-gradient-to-br from-pink-200 to-rose-300 flex items-center justify-center">
                   <div className="text-center">
@@ -130,7 +130,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link href="/products?category=men" className="group">
+            <Link href="/products/" className="group">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="aspect-[4/3] bg-gradient-to-br from-blue-200 to-indigo-300 flex items-center justify-center">
                   <div className="text-center">
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link href="/products?category=unisex" className="group">
+            <Link href="/products/" className="group">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="aspect-[4/3] bg-gradient-to-br from-green-200 to-teal-300 flex items-center justify-center">
                   <div className="text-center">

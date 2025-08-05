@@ -35,7 +35,7 @@ export default function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
-                href="/products"
+                href="/products/"
                 className="inline-flex items-center justify-center px-8 py-4 gradient-gold text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 group"
               >
                 Shop Collection
@@ -43,7 +43,7 @@ export default function Hero() {
               </Link>
               
               <Link 
-                href="/about"
+                href="/about/"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-gold text-gold font-semibold rounded-lg hover-gold transition-all duration-300"
               >
                 Learn More

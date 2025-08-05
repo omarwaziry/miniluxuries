@@ -53,7 +53,7 @@ export default function CartPage() {
               Discover our amazing fragrances and start building your collection.
             </p>
             <Link
-              href="/products"
+              href="/products/"
               className="inline-flex items-center px-6 py-3 gradient-gold text-white rounded-lg hover:shadow-lg transition-all"
             >
               Start Shopping
@@ -93,7 +93,7 @@ export default function CartPage() {
                     
                     {/* Product Info */}
                     <div className="flex-1 min-w-0">
-                      <Link href={`/products/${item.product.id}`}>
+                      <Link href={`/products/${item.product.id}/`}>
                         <h3 className="text-lg font-semibold text-gray-800 hover:text-gold transition-colors">
                           {item.product.name}
                         </h3>
@@ -199,7 +199,7 @@ export default function CartPage() {
                 </button>
                 
                 <Link
-                  href="/products"
+                  href="/products/"
                   className="w-full block text-center border border-gray-300 text-gray-700 py-3 px-4 rounded-lg font-medium hover:bg-gray-50 transition-colors"
                 >
                   Continue Shopping
